@@ -120,8 +120,6 @@ figure img, .card img, .loading img { width: 100%; border-radius: 14px; }
 .stats p { margin-left: calc(clamp(38px, 5vw, 70px) + clamp(8px, 1.4vw, 18px)); }
 .funnel li { display: flex; align-items: center; gap: .55em; }
 .funnel .glyph { color: var(--purple); }
-.audit-mascot { display: block; margin-top: 8px; }
-.audit .audit-mascot img { width: min(100%, 151px); border-radius: 0; }
 .detail {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
