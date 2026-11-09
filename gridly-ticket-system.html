@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Gridly turned localization QA feedback into trackable, assignable tickets. A product design case study by Phu Vo Hoang.">
+  <title>Gridly Ticket System | Phu Vo Hoang</title>
+  <link rel="stylesheet" href="assets/ticket/case-study.css">
+</head>
+<body>
+  <header class="topbar"><a href="./#projects">← Case Studies</a><span>Phu Vo Hoang</span></header>
+  <main>
+    <section class="chapter hero" id="overview" aria-labelledby="title">
+      <div class="split">
+        <div>
+          <p class="label">Gridly · Product design case study</p>
+          <h1 id="title">From comments<br>to tickets</h1>
+          <p class="lede">Issue tracking for localization quality assurance in Gridly.</p>
+          <p class="byline">Phu Vo Hoang <span>·</span> Product Design</p>
+        </div>
+        <img class="art" src="assets/ticket/cover.webp" width="793" height="626" alt="A localization grid with a new LQA ticket linked to a translated string">
+      </div>
+    </section>
+    <nav class="contents" aria-label="Case study sections">
+      <a href="#problem">Problem</a><a href="#research">Research</a><a href="#mvp">MVP</a><a href="#migration">Migration</a><a href="#create">Create a ticket</a><a href="#detail">Ticket detail</a><a href="#rovio">Rovio outcome</a><a href="#visibility">Ticket Center</a><a href="#takeaways">Takeaways</a><a href="#post-launch">Post-launch</a>
+    </nav>
+
+    <section class="chapter" id="problem">
+      <p class="label">01 <span>/</span> Product problem</p>
+      <div class="split">
+        <div><h2>Teams were tracking QA work in comment threads</h2><p class="lede">As projects added languages and roles, teams used comments to report issues and coordinate fixes.</p></div>
+        <img class="art" src="assets/ticket/comments.webp" width="666" height="358" loading="lazy" alt="A comment thread alongside a multilingual grid">
+      </div>
+      <div class="cards three">
+        <article><h3>Feedback went unseen</h3><p>Comments had no mentions or notifications.</p></article>
+        <article><h3>Ownership was unclear</h3><p>Teams could neither assign an issue nor mark it resolved.</p></article>
+        <article><h3>Progress was hard to see</h3><p>Project managers had no list of open issues to filter.</p></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="research">
+      <p class="label">02 <span>/</span> User research</p>
+      <div class="split">
+        <div><h2>A single issue crossed several tools</h2><p class="lede">I interviewed LQA linguists and translators, then mapped how they handed off a fix.</p></div>
+        <ol class="flow">
+          <li><strong>Review strings</strong><span>LQA linguists check translations in Memsource.</span></li>
+          <li><strong>Log errors and evidence</strong><span>They record errors in Google Sheets and link screenshots from Drive.</span></li>
+          <li><strong>Send a final report</strong><span>Translators use the report to locate the strings and fix them.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="chapter" id="mvp">
+      <p class="label">03 <span>/</span> MVP scope</p>
+      <h2>The first release focused on logging and tracking issues</h2>
+      <p class="lede">I prioritized the actions reviewers needed to report an issue from a translated string.</p>
+      <div class="cards two">
+        <article><h3>In the MVP</h3><ul><li>Review and navigate strings in the grid.</li><li>Log multiple LQA issues on one cell.</li><li>Export issues for QA reporting.</li></ul></article>
+        <article><h3>Deferred in the MVP plan</h3><ul><li>Custom LQA models.</li><li>Image upload and editing.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="migration">
+      <p class="label">04 <span>/</span> Migration strategy</p>
+      <h2>Existing conversations became tickets</h2>
+      <p class="lede">We migrated existing comments to Basic Tickets, keeping the thread, author, timestamp and link to the original cell.</p>
+      <div class="migration" aria-label="Migration from comments to Basic Tickets"><strong>Comment thread</strong><span aria-hidden="true">→</span><strong>Basic Ticket</strong></div>
+      <div class="cards two">
+        <article><h3>Basic Ticket</h3><p>Teams could continue existing threads and use the same workflow for new everyday feedback.</p></article>
+        <article><h3>LQA Issue</h3><p>Reviewers could classify formal language QA issues by category and severity using a predefined LQA model.</p></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="create">
+      <p class="label">05 <span>/</span> Create a ticket</p>
+      <div class="split screenshot">
+        <div><h2>Reviewers report issues from the cell</h2><dl><dt>Cell-level entry</dt><dd>Start from the translated string and keep the ticket linked to it.</dd><dt>LQA fields</dt><dd>Capture category, subcategory and severity for formal reviews.</dd></dl></div>
+        <figure><img class="art" src="assets/ticket/create.webp" width="965" height="635" loading="lazy" alt="Create Ticket form opened from a Vietnamese translation cell, with Accuracy, Translation error and Major selected"><figcaption>Reviewers can create an LQA issue without leaving the grid.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="chapter" id="detail">
+      <p class="label">06 <span>/</span> Ticket detail</p>
+      <div class="split screenshot">
+        <div><h2>Translators can see who owns the fix</h2><dl><dt>One view for the fix</dt><dd>See the assignee and priority alongside the linked string.</dd><dt>Follow-up in context</dt><dd>Keep the discussion and the fix in the same ticket thread.</dd></dl></div>
+        <figure><img class="art" src="assets/ticket/detail.webp" width="949" height="641" loading="lazy" alt="Ticket detail showing the linked English and Vietnamese strings, comments, assignee, priority and severity"><figcaption>The ticket keeps the original string and the conversation together.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="chapter" id="rovio">
+      <p class="label">07 <span>/</span> Customer outcome</p>
+      <div class="split">
+        <div><p class="pill">Rovio · Customer story</p><h2>Rovio reviewed 4× as many strings</h2><p class="lede">Rovio combined automated screenshots with its LQA workflow in Gridly.</p></div>
+        <img class="art" src="assets/ticket/rovio.webp" width="960" height="526" loading="lazy" alt="Rovio customer story illustration featuring Angry Birds and Gridly Ticket Center">
+      </div>
+      <div class="cards two">
+        <article class="metric"><strong>~1,000</strong><p>Strings reviewed per test</p></article>
+        <article><h3>Where tickets helped</h3><p>Reviewers could turn issues found in context into assigned work and track fixes in the same workspace.</p></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="visibility">
+      <p class="label">08 <span>/</span> Project visibility</p>
+      <div class="split screenshot">
+        <div><h2>Project managers get one issue queue</h2><p class="lede">Ticket Center brings Basic Tickets and LQA issues into a project-wide view.</p></div>
+        <img class="art" src="assets/ticket/center.webp" width="1014" height="502" loading="lazy" alt="Ticket Center with project, type, status and assignee filters above the issue queue">
+      </div>
+      <div class="cards three">
+        <article><h3>Status</h3><p>Separate open issues from resolved work.</p></article>
+        <article><h3>Type</h3><p>Focus on formal LQA issues or everyday feedback.</p></article>
+        <article><h3>Assignee</h3><p>Find work by owner and follow up on outstanding fixes.</p></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="takeaways">
+      <p class="label">09 <span>/</span> Key takeaways</p>
+      <h2>Make localization QA visible</h2>
+      <p class="lede">Turning scattered comments into structured tickets helped teams review, assign and resolve localization issues at scale.</p>
+      <div class="cards three">
+        <article><h3>Focus on the workflow</h3><p>Start from real handoffs and remove friction for the people doing the work.</p></article>
+        <article><h3>Ship a focused MVP</h3><p>Launch the core workflow, then expand to support advanced LQA needs.</p></article>
+        <article><h3>Make work visible</h3><p>Give teams one place to track ownership and progress.</p></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="post-launch">
+      <p class="label">10 <span>/</span> Post-launch learnings</p>
+      <div class="split">
+        <div><h2>What we improved after launch</h2><p class="lede">Real usage and feedback shaped the next set of improvements.</p></div>
+        <img class="art" src="assets/ticket/post-launch.webp" width="843" height="294" loading="lazy" alt="Angry Birds characters beside a laptop showing Ticket Center">
+      </div>
+      <div class="cards three">
+        <article><h3>Custom LQA models</h3><p>Adapt issue types, categories and severity to each customer’s workflow.</p><p class="pill">Terminology · Consistency · Accuracy</p></article>
+        <article><h3>Ticket attachments</h3><p>Add screenshots, references or other context to speed up reviews.</p><p class="pill">Screenshots and references</p></article>
+        <article><h3>Configurable Ticket Viewer</h3><p>Tailor the ticket view to the project and the person using it.</p><p class="pill">Translator · Reviewer · Project manager</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><a href="./#projects">← Back to Case Studies</a><a href="#overview">Back to top ↑</a></footer>
+</body>
+</html>
