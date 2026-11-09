@@ -70,6 +70,19 @@ figure img, .card img, .loading img { width: 100%; border-radius: 14px; }
 .card img { margin-top: 12px; }
 .audit .card { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; align-items: center; }
 .audit .card img { margin-top: 0; }
+
+@media (min-width: 741px) {
+  .audit .card { align-items: start; }
+  .audit .with-icon {
+    --badge-size: clamp(38px, 5vw, 70px);
+    min-height: max(var(--badge-size), 2lh);
+    align-items: start;
+  }
+  .audit .step-badge { width: var(--badge-size); }
+  .audit .with-icon > span:last-child {
+    padding-top: max(0px, calc((var(--badge-size) - 2lh) / 2));
+  }
+}
 .screens img { width: min(100%, 460px); margin-inline: auto; }
 .experiment .card:last-child { border-color: #a477ef; }
 .stats h3, .change { font-size: clamp(1.5rem, 3.1vw, 3rem); font-weight: 760; color: var(--purple); }
