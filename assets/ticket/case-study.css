@@ -40,7 +40,7 @@ figcaption { margin-top: 9px; font-size: .875rem; }
 .cards { display: grid; gap: 14px; margin-top: 24px; }
 .two { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .three { grid-template-columns: repeat(3,minmax(0,1fr)); }
-.cards article, .flow, .migration { border: 1px solid var(--line); border-radius: 18px; background: var(--panel); padding: clamp(16px, 2.5vw, 30px); }
+.cards article, .flow { border: 1px solid var(--line); border-radius: 18px; background: var(--panel); padding: clamp(16px, 2.5vw, 30px); }
 .cards p, dd, li, .flow span { color: var(--muted); }
 .cards ul { margin: 0; padding-left: 1.25rem; }
 .cards li + li { margin-top: 6px; }
@@ -50,8 +50,6 @@ figcaption { margin-top: 9px; font-size: .875rem; }
 .flow li + li { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
 .flow strong, .flow span { display: block; }
 .flow strong { color: var(--ink); }
-.migration { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 24px; color: var(--accent); }
-.migration strong { background: white; border-radius: 9px; padding: 6px 12px; }
 dl { margin-top: 20px; }
 dt { color: var(--accent); font-weight: 800; }
 dd { margin: 4px 0 16px; }
@@ -62,3 +60,30 @@ dd { margin: 4px 0 16px; }
 @media (max-width: 520px) {
   .two { grid-template-columns: 1fr; }
 }
+
+.icon-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon-tile { display: inline-grid; place-items: center; flex: none; width: 42px; height: 42px; border-radius: 11px; background: linear-gradient(145deg, #ede3ff, #ded0ff); color: var(--accent); }
+.icon-tile svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.chapter > .label { display: flex; align-items: center; gap: 7px; }
+.chapter > .label::after { content: ""; flex: 1; height: 1px; margin-inline-start: 10px; background: var(--line); }
+.chapter > .label span { margin: 0; }
+.hero-label, .card-title, dt { display: flex; align-items: center; gap: 10px; }
+.hero-label .icon-tile { width: 28px; height: 28px; border-radius: 8px; }
+.hero-label .icon-tile svg { width: 17px; height: 17px; }
+.feature-heading { display: flex; gap: 12px; align-items: flex-start; }
+.feature-heading h3, .card-title { color: var(--accent); }
+.flow { margin-top: 20px; }
+.scope ul { list-style: none; padding: 0; }
+.scope li { display: flex; align-items: center; gap: 12px; padding-top: 8px; }
+.scope li + li { border-top: 1px solid var(--line); }
+.scope li .icon-tile { width: 32px; height: 32px; }
+.scope li .icon-tile svg { width: 19px; height: 19px; }
+.metric .icon-tile { margin-inline-end: 10px; }
+.takeaway-copy .cards { grid-template-columns: 1fr; }
+.recap { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 16px; padding: 14px; border-radius: 16px; background: var(--panel); }
+.recap div { display: grid; justify-items: start; gap: 4px; }
+.recap strong { color: var(--accent); font-size: 1.25rem; }
+.recap div > span:not(.icon-tile) { color: var(--muted); font-size: .85rem; }
+.post-launch-cards article { display: flex; flex-direction: column; gap: 16px; padding: clamp(14px, 1.8vw, 24px); background: linear-gradient(150deg, #fbf8ff, #f1ebfc); }
+.post-launch-cards .icon-tile { background: linear-gradient(145deg, #a18ae9, #6845ce); color: white; }
+.mini-ui { display: block; width: 100%; height: auto; margin-top: auto; border-radius: 10px; }

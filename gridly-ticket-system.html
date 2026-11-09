@@ -8,12 +8,36 @@
   <link rel="stylesheet" href="assets/ticket/case-study.css">
 </head>
 <body>
+<svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-cube" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5m-9 5v10"/></symbol>
+  <symbol id="icon-bell-off" viewBox="0 0 24 24"><path d="M10 20a2 2 0 0 0 4 0M4 17h16l-2-3V9a6 6 0 0 0-6-6 6 6 0 0 0-6 6v5zM3 21 21 3"/></symbol>
+  <symbol id="icon-owner" viewBox="0 0 24 24"><circle cx="10" cy="7" r="4"/><path d="M2 21v-2a5 5 0 0 1 5-5h5m4 2a2 2 0 1 1 3 1.7c-1 .6-1 1-1 1.3m0 3h.01"/></symbol>
+  <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M5 20v-5m7 5v-9m7 9V5" stroke-width="3.5"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18m6-18v18"/></symbol>
+  <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></symbol>
+  <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="M10 4c0 5 3 8 8 8-5 0-8 3-8 8 0-5-3-8-8-8 5 0 8-3 8-8zm8-2v6m-3-3h6m0 11v5m-2.5-2.5h5"/></symbol>
+  <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.5"/><path d="m4 17 5-4 4 3 4-5 4 5"/></symbol>
+  <symbol id="icon-ticket" viewBox="0 0 24 24"><path d="M3 6h18v3a3 3 0 0 0 0 6v3H3v-3a3 3 0 0 0 0-6zm10 2v1m0 3v1m0 3v1"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 4-4 8-8 10-4-2-8-6-8-10V6zm-4 10 3 3 5-6"/></symbol>
+  <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="icon-person" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2z"/></symbol>
+  <symbol id="icon-comment" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3h-6l-5 4v-4H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3zM7 11h.01m4 0h.01m4 0h.01"/></symbol>
+  <symbol id="icon-filter" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></symbol>
+  <symbol id="icon-people" viewBox="0 0 24 24"><circle cx="10" cy="7" r="3"/><path d="M3 20v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2zm14-16a3 3 0 0 1 0 6m2 3a4 4 0 0 1 3 4v3"/></symbol>
+  <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4"/><path d="m11 13 9-9m0 0v4m0-4h-4"/></symbol>
+  <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-12h-7z"/></symbol>
+  <symbol id="icon-clip" viewBox="0 0 24 24"><path d="m8 13 7-7a3 3 0 0 1 4 4L9 20a5 5 0 0 1-7-7L13 2m-7 14L16 6"/></symbol>
+  <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M12 17v4m-5 0h10"/></symbol>
+</svg>
   <header class="topbar"><a href="./#projects">← Case Studies</a><span>Phu Vo Hoang</span></header>
   <main>
     <section class="chapter hero" id="overview" aria-labelledby="title">
       <div class="split">
         <div>
-          <p class="label">Gridly · Product design case study</p>
+          <p class="label hero-label"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-cube"></use></svg></span>Gridly · Product design case study</p>
           <h1 id="title">From comments<br>to tickets</h1>
           <p class="lede">Issue tracking for localization quality assurance in Gridly.</p>
           <p class="byline">Phu Vo Hoang <span>·</span> Product Design</p>
@@ -32,49 +56,48 @@
         <img class="art" src="assets/ticket/comments.webp" width="666" height="358" loading="lazy" alt="A comment thread alongside a multilingual grid">
       </div>
       <div class="cards three">
-        <article><h3>Feedback went unseen</h3><p>Comments had no mentions or notifications.</p></article>
-        <article><h3>Ownership was unclear</h3><p>Teams could neither assign an issue nor mark it resolved.</p></article>
-        <article><h3>Progress was hard to see</h3><p>Project managers had no list of open issues to filter.</p></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-bell-off"></use></svg></span><div><h3>Feedback went unseen</h3><p>Comments had no mentions or notifications.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-owner"></use></svg></span><div><h3>Ownership was unclear</h3><p>Teams could neither assign an issue nor mark it resolved.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-chart"></use></svg></span><div><h3>Progress was hard to see</h3><p>Project managers had no list of open issues to filter.</p></div></div></article>
       </div>
     </section>
 
     <section class="chapter" id="research">
       <p class="label">02 <span>/</span> User research</p>
       <div class="split">
-        <div><h2>A single issue crossed several tools</h2><p class="lede">I interviewed LQA linguists and translators, then mapped how they handed off a fix.</p></div>
-        <ol class="flow">
+        <div><h2>A single issue crossed several tools</h2><p class="lede">I interviewed LQA linguists and translators, then mapped how they handed off a fix.</p><ol class="flow">
           <li><strong>Review strings</strong><span>LQA linguists check translations in Memsource.</span></li>
           <li><strong>Log errors and evidence</strong><span>They record errors in Google Sheets and link screenshots from Drive.</span></li>
           <li><strong>Send a final report</strong><span>Translators use the report to locate the strings and fix them.</span></li>
-        </ol>
+        </ol></div>
+        <img class="art" src="assets/ticket/research.webp" width="798" height="612" loading="lazy" alt="Workflow diagram from the LQA linguist through Memsource, Google Sheets and Google Drive to the translator">
       </div>
     </section>
 
     <section class="chapter" id="mvp">
       <p class="label">03 <span>/</span> MVP scope</p>
-      <h2>The first release focused on logging and tracking issues</h2>
-      <p class="lede">I prioritized the actions reviewers needed to report an issue from a translated string.</p>
-      <div class="cards two">
-        <article><h3>In the MVP</h3><ul><li>Review and navigate strings in the grid.</li><li>Log multiple LQA issues on one cell.</li><li>Export issues for QA reporting.</li></ul></article>
-        <article><h3>Deferred in the MVP plan</h3><ul><li>Custom LQA models.</li><li>Image upload and editing.</li></ul></article>
+      <div class="split"><div><h2>The first release focused on logging and tracking issues</h2>
+      <p class="lede">I prioritized the actions reviewers needed to report an issue from a translated string.</p></div><img class="art" src="assets/ticket/mvp.webp" width="689" height="306" loading="lazy" alt="Create ticket action beside a selected translation cell"></div>
+      <div class="cards two scope">
+        <article><h3 class="card-title"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span>In the MVP</h3><ul><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-grid"></use></svg></span><span>Review and navigate strings in the grid.</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-layers"></use></svg></span><span>Log multiple LQA issues on one cell.</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-download"></use></svg></span><span>Export issues for QA reporting.</span></li></ul></article>
+        <article><h3 class="card-title"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-clock"></use></svg></span>Deferred in the MVP plan</h3><ul><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-sparkles"></use></svg></span><span>Custom LQA models.</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-image"></use></svg></span><span>Image upload and editing.</span></li></ul></article>
       </div>
     </section>
 
     <section class="chapter" id="migration">
       <p class="label">04 <span>/</span> Migration strategy</p>
-      <h2>Existing conversations became tickets</h2>
-      <p class="lede">We migrated existing comments to Basic Tickets, keeping the thread, author, timestamp and link to the original cell.</p>
-      <div class="migration" aria-label="Migration from comments to Basic Tickets"><strong>Comment thread</strong><span aria-hidden="true">→</span><strong>Basic Ticket</strong></div>
+      <div class="split"><div><h2>Existing conversations became tickets</h2>
+      <p class="lede">We migrated existing comments to Basic Tickets, keeping the thread, author, timestamp and link to the original cell.</p></div><img class="art" src="assets/ticket/migration.webp" width="764" height="373" loading="lazy" alt="An existing comment thread becomes a Basic Ticket with its author, timestamp and cell link"></div>
       <div class="cards two">
-        <article><h3>Basic Ticket</h3><p>Teams could continue existing threads and use the same workflow for new everyday feedback.</p></article>
-        <article><h3>LQA Issue</h3><p>Reviewers could classify formal language QA issues by category and severity using a predefined LQA model.</p></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-ticket"></use></svg></span><div><h3>Basic Ticket</h3><p>Teams could continue existing threads and use the same workflow for new everyday feedback.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-shield"></use></svg></span><div><h3>LQA Issue</h3><p>Reviewers could classify formal language QA issues by category and severity using a predefined LQA model.</p></div></div></article>
       </div>
     </section>
 
     <section class="chapter" id="create">
       <p class="label">05 <span>/</span> Create a ticket</p>
       <div class="split screenshot">
-        <div><h2>Reviewers report issues from the cell</h2><dl><dt>Cell-level entry</dt><dd>Start from the translated string and keep the ticket linked to it.</dd><dt>LQA fields</dt><dd>Capture category, subcategory and severity for formal reviews.</dd></dl></div>
+        <div><h2>Reviewers report issues from the cell</h2><dl><dt><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-eye"></use></svg></span>Cell-level entry</dt><dd>Start from the translated string and keep the ticket linked to it.</dd><dt><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-layers"></use></svg></span>LQA fields</dt><dd>Capture category, subcategory and severity for formal reviews.</dd></dl></div>
         <figure><img class="art" src="assets/ticket/create.webp" width="965" height="635" loading="lazy" alt="Create Ticket form opened from a Vietnamese translation cell, with Accuracy, Translation error and Major selected"><figcaption>Reviewers can create an LQA issue without leaving the grid.</figcaption></figure>
       </div>
     </section>
@@ -82,7 +105,7 @@
     <section class="chapter" id="detail">
       <p class="label">06 <span>/</span> Ticket detail</p>
       <div class="split screenshot">
-        <div><h2>Translators can see who owns the fix</h2><dl><dt>One view for the fix</dt><dd>See the assignee and priority alongside the linked string.</dd><dt>Follow-up in context</dt><dd>Keep the discussion and the fix in the same ticket thread.</dd></dl></div>
+        <div><h2>Translators can see who owns the fix</h2><dl><dt><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-person"></use></svg></span>One view for the fix</dt><dd>See the assignee and priority alongside the linked string.</dd><dt><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-comment"></use></svg></span>Follow-up in context</dt><dd>Keep the discussion and the fix in the same ticket thread.</dd></dl></div>
         <figure><img class="art" src="assets/ticket/detail.webp" width="949" height="641" loading="lazy" alt="Ticket detail showing the linked English and Vietnamese strings, comments, assignee, priority and severity"><figcaption>The ticket keeps the original string and the conversation together.</figcaption></figure>
       </div>
     </section>
@@ -94,8 +117,8 @@
         <img class="art" src="assets/ticket/rovio.webp" width="960" height="526" loading="lazy" alt="Rovio customer story illustration featuring Angry Birds and Gridly Ticket Center">
       </div>
       <div class="cards two">
-        <article class="metric"><strong>~1,000</strong><p>Strings reviewed per test</p></article>
-        <article><h3>Where tickets helped</h3><p>Reviewers could turn issues found in context into assigned work and track fixes in the same workspace.</p></article>
+        <article class="metric"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-chart"></use></svg></span><strong>~1,000</strong><p>Strings reviewed per test</p></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span><div><h3>Where tickets helped</h3><p>Reviewers could turn issues found in context into assigned work and track fixes in the same workspace.</p></div></div></article>
       </div>
     </section>
 
@@ -106,21 +129,21 @@
         <img class="art" src="assets/ticket/center.webp" width="1014" height="502" loading="lazy" alt="Ticket Center with project, type, status and assignee filters above the issue queue">
       </div>
       <div class="cards three">
-        <article><h3>Status</h3><p>Separate open issues from resolved work.</p></article>
-        <article><h3>Type</h3><p>Focus on formal LQA issues or everyday feedback.</p></article>
-        <article><h3>Assignee</h3><p>Find work by owner and follow up on outstanding fixes.</p></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-filter"></use></svg></span><div><h3>Status</h3><p>Separate open issues from resolved work.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-layers"></use></svg></span><div><h3>Type</h3><p>Focus on formal LQA issues or everyday feedback.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-people"></use></svg></span><div><h3>Assignee</h3><p>Find work by owner and follow up on outstanding fixes.</p></div></div></article>
       </div>
     </section>
 
     <section class="chapter" id="takeaways">
       <p class="label">09 <span>/</span> Key takeaways</p>
-      <h2>Make localization QA visible</h2>
+      <div class="split"><div class="takeaway-copy"><h2>Make localization QA visible</h2>
       <p class="lede">Turning scattered comments into structured tickets helped teams review, assign and resolve localization issues at scale.</p>
       <div class="cards three">
-        <article><h3>Focus on the workflow</h3><p>Start from real handoffs and remove friction for the people doing the work.</p></article>
-        <article><h3>Ship a focused MVP</h3><p>Launch the core workflow, then expand to support advanced LQA needs.</p></article>
-        <article><h3>Make work visible</h3><p>Give teams one place to track ownership and progress.</p></article>
-      </div>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-target"></use></svg></span><div><h3>Focus on the workflow</h3><p>Start from real handoffs and remove friction for the people doing the work.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-layers"></use></svg></span><div><h3>Ship a focused MVP</h3><p>Launch the core workflow, then expand to support advanced LQA needs.</p></div></div></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-people"></use></svg></span><div><h3>Make work visible</h3><p>Give teams one place to track ownership and progress.</p></div></div></article>
+      </div></div><div><img class="art" src="assets/ticket/takeaways.webp" width="891" height="494" loading="lazy" alt="Gridly Ticket Center with Open, In Progress and Resolved statuses"><div class="recap"><div><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-bolt"></use></svg></span><strong>4×</strong><span>as many strings reviewed</span></div><div><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-layers"></use></svg></span><strong>~1,000</strong><span>strings per test</span></div><div><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-check"></use></svg></span><strong>Faster &amp; clearer</strong><span>issue resolution</span></div></div></div></div>
     </section>
 
     <section class="chapter" id="post-launch">
@@ -129,10 +152,10 @@
         <div><h2>What we improved after launch</h2><p class="lede">Real usage and feedback shaped the next set of improvements.</p></div>
         <img class="art" src="assets/ticket/post-launch.webp" width="843" height="294" loading="lazy" alt="Angry Birds characters beside a laptop showing Ticket Center">
       </div>
-      <div class="cards three">
-        <article><h3>Custom LQA models</h3><p>Adapt issue types, categories and severity to each customer’s workflow.</p><p class="pill">Terminology · Consistency · Accuracy</p></article>
-        <article><h3>Ticket attachments</h3><p>Add screenshots, references or other context to speed up reviews.</p><p class="pill">Screenshots and references</p></article>
-        <article><h3>Configurable Ticket Viewer</h3><p>Tailor the ticket view to the project and the person using it.</p><p class="pill">Translator · Reviewer · Project manager</p></article>
+      <div class="cards three post-launch-cards">
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-sparkles"></use></svg></span><div><h3>Custom LQA Models</h3><p>Adapt issue types, categories and severity to each customer’s workflow.</p></div></div><img class="mini-ui" src="assets/ticket/lqa-model.webp" width="381" height="189" loading="lazy" alt="Rovio LQA model selected, with Terminology, Consistency, Accuracy, Style and Others categories"></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-clip"></use></svg></span><div><h3>Ticket Attachments</h3><p>Add screenshots, references or context to speed up reviews.</p></div></div><img class="mini-ui" src="assets/ticket/attachments.webp" width="384" height="180" loading="lazy" alt="Angry Birds screenshot attached as ui_start_en.png, with an Add attachment control"></article>
+        <article><div class="feature-heading"><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#icon-monitor"></use></svg></span><div><h3>Configurable Ticket Viewer</h3><p>Tailor the ticket view by role and project needs.</p></div></div><img class="mini-ui" src="assets/ticket/viewer.webp" width="438" height="193" loading="lazy" alt="Translator, Reviewer and Project Manager tabs with fields for linked strings, attachments, comments and history"></article>
       </div>
     </section>
   </main>
