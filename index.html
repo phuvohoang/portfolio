@@ -1,137 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>About — Phu Vo Hoang</title><meta name="description" content="Phu Vo Hoang, Product Designer. Curious about people. Thoughtful about products."><style>
-:root{--ink:#171714;--accent:#edc531;--muted:#6f6d65;--line:#e4e0d4;--paper:#fffef9;--hero-cream:#f6f1e2}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(max(12px, env(safe-area-inset-top)) + 68px)}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.7}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--accent);outline-offset:6px}nav{display:flex;align-items:center;justify-content:space-between;width:100%;gap:0 20px;margin-bottom:28px;padding:4px 14px;border-radius:12px;background:var(--hero-cream)}
-nav.is-pinned{position:sticky;top:max(12px, env(safe-area-inset-top));z-index:10;background:var(--paper);box-shadow:inset 0 0 0 1px rgba(255,255,255,.86),0 6px 24px rgba(42,35,18,.13)}
-@supports ((backdrop-filter:blur(32px)) or (-webkit-backdrop-filter:blur(32px))){
-  nav.is-pinned{background:linear-gradient(160deg,rgba(255,255,255,.72),rgba(246,241,226,.54));-webkit-backdrop-filter:blur(32px) saturate(160%);backdrop-filter:blur(32px) saturate(160%)}
-}
-@media(prefers-reduced-motion:no-preference){
-  nav.is-pinned{animation:nav-appear .22s ease-out}
-}
-@keyframes nav-appear{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:420px){html{scroll-padding-top:calc(max(12px, env(safe-area-inset-top)) + 112px)}}.logo{flex-shrink:0;font-weight:800;font-size:21px;letter-spacing:-1px}.logo span{color:var(--accent)}.navlinks{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:0 14px;font-size:13px}.logo,.navlinks a{display:inline-flex;align-items:center;gap:4px;min-height:44px}.navlinks a{padding-inline:2px;white-space:nowrap}.navlinks [aria-current="location"]{color:var(--ink);box-shadow:0 2px 0 var(--accent)}main{max-width:1160px;margin:auto;padding:24px 38px 0}.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:12px}.eyebrow:before{content:'';width:22px;height:1px;background:var(--accent)}.intro{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:70px;padding-top:26px;padding-bottom:80px}.intro h1{font-size:clamp(48px,5.3vw,74px);font-weight:500;line-height:1.09;letter-spacing:-4px;margin:14px 0 26px}.intro h1 em{font-family:Georgia,serif;font-weight:400;color:var(--ink);background:linear-gradient(transparent 68%,var(--accent) 68%,var(--accent) 92%,transparent 92%)}.lead{font-size:19px;line-height:1.8;max-width:460px;color:#61615e}.intro .name{font-size:14px;margin-top:30px}.name span{display:block;color:var(--ink);font-size:15px;margin-top:3px}.visual{position:relative;padding:20px 24px 0 0;align-self:center}.portrait{position:relative;width:100%;aspect-ratio:1.05;object-fit:contain;border-radius:16px;display:block;background:var(--hero-cream)}.visual:after{content:'';position:absolute;left:-22px;bottom:38px;width:90px;height:90px;border:1px solid #d4bc58;border-radius:50%;z-index:-1}.photo-note{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1.4px;color:var(--muted);margin-top:15px}.story{border-top:1px solid var(--line);padding:44px 0 55px;display:grid;grid-template-columns:1fr 2fr;gap:65px}.label{font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink)}.label small{color:#8c8673;margin-right:16px}.story h2{font-size:30px;font-weight:400;line-height:1.3;letter-spacing:-.8px;margin:0 0 22px}.story p{font-size:16px;color:#666662;margin:0 0 16px;max-width:650px}.story strong{font-weight:400;color:var(--ink)}.quote{position:relative;padding:27px 0 27px 29px;margin:29px 0 0;border-left:2px solid var(--accent);font-family:Georgia,serif;font-size:22px;color:var(--ink);font-style:italic;background:linear-gradient(90deg,#fff3be,transparent)}.approach{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:0}.approach article{padding-top:20px;border-top:1px solid #ddd3ae}.approach b{font-size:13px;font-weight:500}.approach p{font-size:14px;margin-top:9px}.num{color:#7a6a2d;font-size:12px;display:block;margin-bottom:16px}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.tags span{background:var(--hero-cream);font-size:12px;border-radius:30px;padding:5px 13px;color:#625c48}.journey{display:flex;flex-direction:column}.role{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid var(--line);padding:17px 0}.role:first-child{padding-top:0}.role h3{font-size:14px;font-weight:500;margin:0}.role p{font-size:14px;margin:2px 0 0}.role time{font-size:12px;color:var(--muted);padding-top:4px}.contact{padding:48px 0 62px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.contact h2{font-weight:400;font-size:34px;letter-spacing:-1px;margin:0}.contact p{font-size:15px;color:var(--muted);margin:5px 0}.button{display:inline-flex;gap:27px;align-items:center;background:var(--accent);color:var(--ink);padding:12px 21px;font-size:12px;transition:background .2s,transform .2s}.button:hover{background:#f8d64e;transform:translateY(-3px)}footer{max-width:1160px;margin:auto;border-top:1px solid var(--line);padding:22px 38px 28px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.reveal{animation:enter .8s both}.delay{animation-delay:.15s}@keyframes enter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@media(max-width:700px){nav{gap:0 12px;padding-inline:10px}.navlinks{gap:0 9px}main{padding:20px 24px 0}.intro{grid-template-columns:1fr;gap:30px;padding-bottom:48px}.intro h1{letter-spacing:-2.5px}.visual{max-width:390px;width:100%;margin:auto;padding-right:16px}.story{grid-template-columns:1fr;gap:24px;padding:30px 0}.approach{gap:15px}.approach b{font-size:12px}.contact{align-items:flex-start;gap:25px;flex-direction:column;padding:32px 0}.contact h2{font-size:30px}footer{padding:20px 24px}.role time{font-size:11px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}.button{transition:none}}
-
-.dot-grid {
-  position: absolute;
-  width: 156px;
-  height: 185px;
-  right: -25px;
-  top: -20px;
-  pointer-events: none;
-  mask-image: radial-gradient(ellipse at 68% 30%, #000 10%, transparent 76%);
-}
-.dot-grid span {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle, #ad8615 1px, transparent 1.35px) 0 0 / 36px 12px;
-  opacity: .35;
-  animation: dot-twinkle 6s ease-in-out infinite alternate;
-}
-.dot-grid span:nth-child(2) { background-position: 12px 0; animation-delay: -2s; }
-.dot-grid span:nth-child(3) { background-position: 24px 0; animation-delay: -4s; }
-@keyframes dot-twinkle {
-  from { opacity: .23; }
-  to { opacity: .56; }
-}
-@media (max-width: 700px) {
-  .dot-grid { right: -9px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .dot-grid span { animation: none; }
-}
-
-.intro { isolation: isolate; }
-.hero-pattern {
-  position: absolute;
-  inset-block: 0;
-  inset-inline: calc(50% - 50vw);
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-}
-.hero-pattern-layer {
-  position: absolute;
-  inset: -110px 0;
-  transform: translateY(var(--hero-shift, 0px));
-}
-.hero-mark {
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: calc(var(--size) * 1.24);
-  aspect-ratio: 1;
-  color: var(--pattern-color, #b68c1e);
-  opacity: .42;
-  transform: translate(-50%, -50%) rotate(var(--angle, 0deg));
-}
-.hero-mark:nth-child(4n + 2) { --pattern-color: #268879; }
-.hero-mark:nth-child(4n + 3) { --pattern-color: #4979b5; }
-.hero-mark:nth-child(4n + 4) { --pattern-color: #bf6544; }
-.hero-mark.dots {
-  background: radial-gradient(circle, currentColor 1.45px, transparent 1.85px) 0 0 / 11px 11px;
-}
-.hero-mark.ring { border: 1px solid currentColor; border-radius: 50%; }
-.hero-mark.diamond { border: 1px solid currentColor; }
-.hero-mark.cross::before,
-.hero-mark.cross::after { content: ''; position: absolute; background: currentColor; }
-.hero-mark.cross::before { inset: 50% 0 auto; height: 1px; }
-.hero-mark.cross::after { inset: 0 auto 0 50%; width: 1px; }
-@media (max-width: 700px) {
-  .hero-mark { width: calc(var(--size) * .9); opacity: .36; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero-pattern-layer { transform: none; }
-}
-
-.featured-projects { border-top: 1px solid var(--line); padding: 48px 0 58px; }
-.projects-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 25px; }
-.projects-heading h2 { font-size: clamp(22px, 3vw, 34px); font-weight: 500; letter-spacing: -.035em; line-height: 1.2; margin: 0; }
-.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.project-card { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
-.project-card img { display: block; width: 100%; height: auto; background: #f4efd9; }
-.project-copy { padding: 16px 18px 19px; }
-.project-number { font-size:12px; letter-spacing: .12em; color: var(--muted); }
-.project-copy h3 { margin: 3px 0 4px; font-size: 18px; font-weight: 500; line-height: 1.3; }
-.project-copy p { margin: 0; font-size:15px; color: var(--muted); line-height: 1.55; }
-@media (max-width: 900px) { .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) {
-  .featured-projects { padding: 32px 0; }
-  .project-grid { grid-template-columns: 1fr; gap: 16px; }
-}
-
-.intro { align-items: center; }
-.intro h1 { max-width: 14ch; margin: 12px 0 22px; }
-.hero-copy { min-width: 0; }
-.hero-role { font-size:13px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; margin: 0; }
-.hero-role span { color: var(--muted); margin-inline: 5px; }
-.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 27px; }
-.hero-actions .button, .button-secondary { min-height: 48px; padding: 11px 17px; border-radius: 8px; font-size: 15px; font-weight: 600; }
-.button-secondary { display: inline-flex; align-items: center; gap: 14px; background: var(--ink); color: var(--paper); }
-.button-secondary:hover { background: #34342e; }
-@media (max-width: 700px) {
-  .intro h1 { font-size: clamp(37px, 9vw, 56px); }
-  .hero-actions { margin-top: 20px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero-actions .button:hover { transform: none; }
-}
-</style></head><body><main id="about"><nav aria-label="Main navigation"><a href="#about" class="logo" aria-label="Phu Vo Hoang home">phu<span>.</span></a><div class="navlinks"><a href="#about" aria-current="location">About</a><a href="#projects">Case Studies</a><a href="#journey">Journey</a><a href="mailto:phu.vohoang89@gmail.com">Let’s talk <span aria-hidden="true">↗︎</span></a></div></nav><div class="eyebrow reveal">A little about me</div><section class="intro"><div class="hero-pattern" aria-hidden="true"><div class="hero-pattern-layer">
-  <span class="hero-mark dots" style="--x:5%;--y:29%;--size:52px;--angle:-9deg"></span>
-  <span class="hero-mark ring" style="--x:9%;--y:64%;--size:55px;--angle:0deg"></span>
-  <span class="hero-mark diamond" style="--x:15%;--y:76%;--size:17px;--angle:28deg"></span>
-  <span class="hero-mark cross" style="--x:22%;--y:22%;--size:17px;--angle:0deg"></span>
-  <span class="hero-mark dots" style="--x:28%;--y:70%;--size:38px;--angle:12deg"></span>
-  <span class="hero-mark ring" style="--x:35%;--y:52%;--size:36px;--angle:0deg"></span>
-  <span class="hero-mark diamond" style="--x:43%;--y:26%;--size:14px;--angle:36deg"></span>
-  <span class="hero-mark cross" style="--x:49%;--y:71%;--size:23px;--angle:0deg"></span>
-  <span class="hero-mark dots" style="--x:54%;--y:44%;--size:52px;--angle:-11deg"></span>
-  <span class="hero-mark ring" style="--x:61%;--y:78%;--size:66px;--angle:0deg"></span>
-  <span class="hero-mark diamond" style="--x:72%;--y:24%;--size:20px;--angle:45deg"></span>
-  <span class="hero-mark dots" style="--x:83%;--y:73%;--size:43px;--angle:13deg"></span>
-  <span class="hero-mark cross" style="--x:92%;--y:57%;--size:21px;--angle:0deg"></span>
-  <span class="hero-mark ring" style="--x:95%;--y:30%;--size:46px;--angle:0deg"></span>
-  <span class="hero-mark dots" style="--x:98%;--y:67%;--size:36px;--angle:-7deg"></span>
-</div></div>
-<div class="hero-copy reveal">
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>About — Phu Vo Hoang</title><meta name="description" content="Phu Vo Hoang, Product Designer. Curious about people. Thoughtful about products."><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/home.css?v=studio">
+</head><body><main id="about"><nav aria-label="Main navigation"><a href="#about" class="logo" aria-label="Phu Vo Hoang home">phu<span>.</span></a><div class="navlinks"><a href="#about" aria-current="location">About</a><a href="#projects">Case Studies</a><a href="#journey">Journey</a></div><a class="nav-contact" href="mailto:phu.vohoang89@gmail.com">Let’s talk <span aria-hidden="true">↗︎</span></a></nav><section class="intro"><div class="hero-pattern" aria-hidden="true"><div class="hero-pattern-layer"></div></div>
+<div class="hero-copy">
+  <p class="eyebrow">A little about me</p>
   <p class="hero-role">Phu Vo Hoang <span aria-hidden="true">/</span> Product Designer</p>
   <h1>Curious about people. <em>Thoughtful</em> about products.</h1>
   <p class="lead">I’m Phu. I like getting to the bottom of what people need and designing products that make everyday tasks easier.</p>
@@ -141,7 +14,7 @@ nav.is-pinned{position:sticky;top:max(12px, env(safe-area-inset-top));z-index:10
   </div>
   <div class="tags"><span>UX Research</span><span>Interaction Design</span><span>Design Systems</span><span>Prototyping</span><span>Frontend Background</span><span>UI Design</span><span>Information Architecture</span><span>Usability Testing</span><span>A/B Testing</span><span>UX Analytics</span></div>
 </div>
-<div class="visual reveal delay"><div class="dot-grid" aria-hidden="true"><span></span><span></span><span></span></div><img class="portrait" src="assets/portrait-hero.webp" alt="Phu Vo Hoang wearing glasses and a suit"><div class="photo-note"><span>THE PERSON BEHIND THE PIXELS</span><span>01 / ABOUT</span></div></div></section><section class="featured-projects" id="projects" aria-labelledby="projects-title">
+<div class="visual"><img class="portrait" src="assets/portrait-hero.webp" alt="Phu Vo Hoang wearing glasses and a suit"><div class="photo-note"><span>THE PERSON BEHIND THE PIXELS</span><span>01 / ABOUT</span></div></div></section><section class="featured-projects" id="projects" aria-labelledby="projects-title">
   <header class="projects-heading">
     <h2 id="projects-title">Case Studies</h2>
   </header>
@@ -203,7 +76,7 @@ nav.is-pinned{position:sticky;top:max(12px, env(safe-area-inset-top));z-index:10
       </div>
     </article>
   </div>
-</section><section class="story"><div class="label"><small>02</small>How I think</div><div><div class="approach"><article><span class="num">01 / UNDERSTAND</span><b>Start with people.</b><p>Listen, observe and question assumptions before jumping into solutions.</p></article><article><span class="num">02 / EXPLORE</span><b>Make ideas tangible.</b><p>Use flows and prototypes to turn a complex problem into something we can explore.</p></article><article><span class="num">03 / REFINE</span><b>Keep learning.</b><p>Test, learn from feedback and work with the team to make the experience better.</p></article></div></div></section><section class="story" id="journey"><div class="label"><small>03</small>The journey so far</div><div class="journey"><div class="role"><div><h3>Gridly · LocalizeDirect</h3><p>Product Design Lead</p></div><time>2021 — Present*</time></div><div class="role"><div><h3>Nextwaves · Skill2Job</h3><p>UI/UX Leader</p></div><time>2020 — 2021</time></div><div class="role"><div><h3>Jobhopin</h3><p>Product Designer</p></div><time>2019 — 2020</time></div><div class="role"><div><h3>A foundation in development</h3><p>SEEC Vietnam · Advance Vision Technology</p></div><time>2017 — 2019</time></div><p style="font-size:12px;margin-top:15px;color:#999">*Career details reflect the supplied CV.</p></div></section><section class="contact" id="contact"><div><h2>Good things start with a conversation<span style="color:var(--accent)">.</span></h2><p>Have a product challenge in mind? I'd love to hear about it.</p></div><a class="button-secondary" href="mailto:phu.vohoang89@gmail.com">Say hello <span aria-hidden="true">↗︎</span></a></section></main><footer><span>© Phu Vo Hoang</span><span>Made with curiosity & a little sunshine.</span></footer>
+</section><section class="story"><div class="label"><small>02</small>How I think</div><div><div class="approach"><article><span class="num">01 / UNDERSTAND</span><b>Start with people.</b><p>Listen, observe and question assumptions before jumping into solutions.</p></article><article><span class="num">02 / EXPLORE</span><b>Make ideas tangible.</b><p>Use flows and prototypes to turn a complex problem into something we can explore.</p></article><article><span class="num">03 / REFINE</span><b>Keep learning.</b><p>Test, learn from feedback and work with the team to make the experience better.</p></article></div></div></section><section class="story" id="journey"><div class="label"><small>03</small>The journey so far</div><div class="journey"><div class="role"><div><h3>Gridly · LocalizeDirect</h3><p>Product Design Lead</p></div><time>2021 — Present*</time></div><div class="role"><div><h3>Nextwaves · Skill2Job</h3><p>UI/UX Leader</p></div><time>2020 — 2021</time></div><div class="role"><div><h3>Jobhopin</h3><p>Product Designer</p></div><time>2019 — 2020</time></div><div class="role"><div><h3>A foundation in development</h3><p>SEEC Vietnam · Advance Vision Technology</p></div><time>2017 — 2019</time></div><p>*Career details reflect the supplied CV.</p></div></section><section class="contact" id="contact"><div><h2>Good things start with a conversation<span>.</span></h2><p>Have a product challenge in mind? I'd love to hear about it.</p></div><a class="button-secondary" href="mailto:phu.vohoang89@gmail.com">Say hello <span aria-hidden="true">↗︎</span></a></section></main><footer><span>© Phu Vo Hoang</span><span>Made with curiosity & a little sunshine.</span></footer>
 <script>
   const hero = document.querySelector('.intro');
   const patternLayer = hero.querySelector('.hero-pattern-layer');
