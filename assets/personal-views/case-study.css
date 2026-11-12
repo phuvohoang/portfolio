@@ -113,7 +113,7 @@ main { max-width: 1600px; margin-inline: auto; }
 .problem-list .item:first-child { margin-top: 0; }
 .problem-list .filter-preview, .problem-list .tags { margin: 9px 0 0 clamp(42px, 5vw, 64px); }
 .problem-list .item:not(:first-child) { padding-top: 15px; border-top: 1px solid var(--line); }
-.table-scroll { overflow-x: auto; margin-top: 13px; }
+.table-scroll { position: relative; overflow-x: auto; margin-top: 13px; }
 table { width: 100%; min-width: 500px; border-spacing: 0; font-size: calc(.89rem + 2px); }
 th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--line); }
 thead th { background: var(--wash); }
