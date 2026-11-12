@@ -8,7 +8,7 @@
   color-scheme: light;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: #edf3fb; color: var(--ink); font: 16px/1.55 system-ui, sans-serif; }
+body { margin: 0; background: #edf3fb; color: var(--ink); font: 18px/1.55 system-ui, sans-serif; }
 a { color: var(--blue); text-underline-offset: .22em; }
 a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 img { display: block; max-width: 100%; height: auto; }
@@ -26,7 +26,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--line);
 }
 .chapters { display: flex; flex-wrap: wrap; gap: 4px; }
-.chapters a { padding: 5px 8px; font-size: .8rem; border-radius: 8px; text-decoration: none; }
+.chapters a { padding: 5px 8px; font-size: calc(.8rem + 2px); border-radius: 8px; text-decoration: none; }
 .chapters a:hover, .chapters a:focus-visible { background: var(--wash); }
 .back { font-weight: 650; font-size: .9rem; }
 main { max-width: 1600px; margin: auto; }
@@ -45,7 +45,7 @@ main { max-width: 1600px; margin: auto; }
   padding-bottom: 14px;
   border-bottom: 1px solid var(--line);
   margin-bottom: clamp(23px, 3.5vw, 54px);
-  font-size: clamp(.72rem, 1.3vw, 1rem);
+  font-size: calc(clamp(.72rem, 1.3vw, 1rem) + 2px);
   font-weight: 720;
   text-transform: uppercase;
 }
@@ -53,7 +53,7 @@ main { max-width: 1600px; margin: auto; }
 .folio-name { margin-left: auto; color: var(--muted); font-weight: 450; text-transform: none; }
 .folio .pill { margin-left: auto; white-space: nowrap; }
 .folio-name + .pill { margin-left: 0; }
-.pill { display: inline-block; padding: .2em .7em; border-radius: 999px; background: #e0edff; color: #164b85; font-size: .85rem; font-weight: 700; }
+.pill { display: inline-block; padding: .2em .7em; border-radius: 999px; background: #e0edff; color: #164b85; font-size: calc(.85rem + 2px); font-weight: 700; }
 .cover { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); align-items: center; gap: 20px; }
 .cover img { border-radius: 22px; }
 .author { text-transform: uppercase; margin-top: 14px; }
@@ -63,9 +63,9 @@ h1 { font-size: clamp(52px, 8vw, 122px); margin: 14px 0; }
 h2 { font-size: clamp(32px, 4.35vw, 69px); margin-bottom: 20px; }
 h3 { font-size: clamp(1.15rem, 2vw, 1.65rem); line-height: 1.23; }
 p { color: var(--muted); }
-.lead { font-size: clamp(1rem, 1.8vw, 1.42rem); max-width: 57ch; margin-bottom: 22px; }
+.lead { font-size: calc(clamp(1rem, 1.8vw, 1.42rem) + 2px); max-width: 57ch; margin-bottom: 22px; }
 mark { color: inherit; background: #eaf6de; border-radius: .25em; }
-.label { font-weight: 740; text-transform: uppercase; letter-spacing: .065em; font-size: .85rem; margin-bottom: 10px; }
+.label { font-weight: 740; text-transform: uppercase; letter-spacing: .065em; font-size: calc(.85rem + 2px); margin-bottom: 10px; }
 .split { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: clamp(18px, 3vw, 48px); align-items: center; }
 .equal { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .callout, .visual, .card, .target-visual, .note { padding: clamp(16px, 2.4vw, 35px); background: var(--wash); border-radius: 22px; }
@@ -83,7 +83,7 @@ mark { color: inherit; background: #eaf6de; border-radius: .25em; }
 .card-body { padding: 18px; }
 .card-body h3 { margin-top: 9px; }
 .visual img { margin-inline: auto; border-radius: 14px; }
-figcaption { text-align: center; margin-top: 12px; color: var(--muted); font-size: .9rem; }
+figcaption { text-align: center; margin-top: 12px; color: var(--muted); font-size: calc(.9rem + 2px); }
 .checks { margin: 0; padding-left: 1.2em; color: var(--ink); }
 .checks li + li { margin-top: .65em; }
 .target-visual { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; gap: 12px; }
@@ -172,7 +172,7 @@ figcaption { text-align: center; margin-top: 12px; color: var(--muted); font-siz
 .participant-badge strong { display: block; font-size: clamp(1.3rem, 2.5vw, 2.2rem); line-height: 1; }
 .next-card { display: flex; flex-direction: column; gap: 12px; }
 .next-card > p, .next-detail p { margin: 0; }
-.next-detail { margin-top: auto; gap: 10px; font-size: .92rem; }
+.next-detail { margin-top: auto; gap: 10px; font-size: calc(.92rem + 2px); }
 .next-detail strong { color: var(--blue); }
 .next-card:nth-child(2) .next-detail strong { color: #418217; }
 @media (max-width: 760px) {

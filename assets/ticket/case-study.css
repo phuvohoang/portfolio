@@ -9,33 +9,33 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 * { box-sizing: border-box; }
-body { margin: 0; color: var(--ink); background: var(--paper); line-height: 1.55; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-size: calc(1rem + 2px); line-height: 1.55; }
 a { color: var(--accent); text-underline-offset: .22em; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
 h1, h2, h3, p, figure, dl { margin: 0; }
 .topbar, main, footer { width: min(1160px, calc(100% - 2 * clamp(16px, 4vw, 48px))); margin-inline: auto; }
-.topbar, footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 20px; font-size: .875rem; }
+.topbar, footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 20px; font-size: calc(.875rem + 2px); }
 .topbar span, figcaption { color: var(--muted); }
 .topbar a, footer a { font-weight: 700; }
 .chapter { padding: clamp(36px, 6vw, 80px) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 20px; }
 .hero { padding: clamp(24px, 5vw, 64px); border: 1px solid var(--line); border-radius: 26px; background: linear-gradient(135deg,#faf5ff,#ede6ff); }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(20px, 4vw, 56px); }
 .screenshot { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
-.label { margin-bottom: 20px; color: var(--accent); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.label { margin-bottom: 20px; color: var(--accent); font-size: calc(.75rem + 2px); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .label span { margin-inline: 5px; color: var(--muted); }
 h1, h2 { letter-spacing: -.047em; line-height: 1.06; text-wrap: balance; }
 h1 { font-size: clamp(2.6rem, 6.6vw, 5.2rem); }
 h2 { max-width: 23ch; font-size: clamp(2rem, 4.5vw, 3.55rem); }
 h3 { font-size: 1.15rem; line-height: 1.24; margin-bottom: 8px; }
-.lede { max-width: 58ch; color: var(--muted); font-size: clamp(1rem, 2vw, 1.25rem); margin-top: 16px; }
-.byline, .pill { display: inline-block; border-radius: 20px; background: #e9dffc; color: #4c299e; font-size: .8rem; font-weight: 700; padding: 6px 12px; }
+.lede { max-width: 58ch; color: var(--muted); font-size: calc(clamp(1rem, 2vw, 1.25rem) + 2px); margin-top: 16px; }
+.byline, .pill { display: inline-block; border-radius: 20px; background: #e9dffc; color: #4c299e; font-size: calc(.8rem + 2px); font-weight: 700; padding: 6px 12px; }
 .byline { margin-top: 26px; }
 .byline span { padding-inline: 4px; }
 .pill + h2 { margin-top: 12px; }
 .art { display: block; width: 100%; height: auto; border-radius: 18px; }
-figcaption { margin-top: 9px; font-size: .875rem; }
+figcaption { margin-top: 9px; font-size: calc(.875rem + 2px); }
 .contents { display: flex; flex-wrap: wrap; gap: 7px; padding-block: 16px; border-bottom: 1px solid var(--line); }
-.contents a { padding: 5px 11px; border-radius: 20px; font-size: .85rem; font-weight: 700; }
+.contents a { padding: 5px 11px; border-radius: 20px; font-size: calc(.85rem + 2px); font-weight: 700; }
 .contents a:hover { background: var(--panel); }
 .cards { display: grid; gap: 14px; margin-top: 24px; }
 .two { grid-template-columns: repeat(2,minmax(0,1fr)); }
@@ -83,7 +83,7 @@ dd { margin: 4px 0 16px; }
 .recap { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 16px; padding: 14px; border-radius: 16px; background: var(--panel); }
 .recap div { display: grid; justify-items: start; gap: 4px; }
 .recap strong { color: var(--accent); font-size: 1.25rem; }
-.recap div > span:not(.icon-tile) { color: var(--muted); font-size: .85rem; }
+.recap div > span:not(.icon-tile) { color: var(--muted); font-size: calc(.85rem + 2px); }
 .post-launch-cards article { display: flex; flex-direction: column; gap: 16px; padding: clamp(14px, 1.8vw, 24px); background: linear-gradient(150deg, #fbf8ff, #f1ebfc); }
 .post-launch-cards .icon-tile { background: linear-gradient(145deg, #a18ae9, #6845ce); color: white; }
 .mini-ui { display: block; width: 100%; height: auto; margin-top: auto; border-radius: 10px; }
